@@ -63,3 +63,5 @@ WARNING: Unmatched cancel notification for request id 10
 2022.10.07 11:42:05 WARN  no build target for: /Users/marius93rm/Desktop/Scala/test.scala
 ott 07, 2022 11:42:09 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
+2022.10.07 11:42:40 WARN  no build target for: /Users/marius93rm/Desktop/Scala/test.scala
+2022.10.07 11:42:46 WARN  no build target for: /Users/marius93rm/Desktop/Scala/test.scala
