@@ -41,6 +41,7 @@ def solveEquation( a: Int, b: Int, c: Int ): Unit = {
 //stampa tutti i caratteri della stringa in input
 def printAllChars( string: String ): Unit = {
 
+
 }
 
 @main def run() =
