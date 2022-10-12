@@ -18,8 +18,21 @@ def findIndicesRec(l: List[Int], x:Int): List[Int] = {
     findIndicesRecAux(l, x, 0)
 }
 
-/* Scrivere un metodo Scala isSorted che, data una lista di interi, 
-verifica se è ordinata in modo non decrescente. */
+
+// (2,3,9) -> true (crescente)
+// (2,1,9) -> false (random)
+// (9,1,2) -> false (decrescente)
+def isSorted(l: List[Int]): Boolean = {
+    var risposta = true
+    for(i <- 0 until l.length-1) {
+        if (l(i) > l(i+1)) risposta = false
+    }
+    return risposta
+}
+
+/*Scrivere un metodo Scala removeDuplicates(l:List[Int]):List[Int] 
+che crea una nuova lista ottenuta da l rimuovendo gli elementi duplicati.
+*/
 
 /* Scrivere un metodo Scala consecutivi che, data una lista generica di n elementi, 
 restituisce la lista di n-1 coppie che contiene tutti gli elementi

@@ -12,7 +12,7 @@ def criptaCesare(frase: String, key: Int): String = {
         }
     }
 
-    return fraseCifrata
+    fraseCifrata
 
 }
 
