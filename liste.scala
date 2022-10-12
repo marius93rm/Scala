@@ -18,4 +18,4 @@ Suggerimento: usare map e reduce
 */
 
 @main def run() =
-    l = List(2,5,6,7,3)
+    val l = List(2,5,6,7,3)
