@@ -2,6 +2,21 @@
 data una lista l e un elemento x, restituisce una lista che contiene gli indici
 i tali che l(i) == x.
 Se la lista non contiene x, il metodo restituisce una lista vuota */
+def findIndices(l: List[Int], x:Int): List[Int] = {
+    var risposta = List[Int]()
+    for (i <- 0 until l.length) {
+        if (l(i) == x) risposta = risposta :+ i
+    }
+}
+
+def findIndicesRec(l: List[Int], x:Int): List[Int] = {
+    def findIndicesRecAux(l: List[Int], x:Int, i:Int): List[Int] = {
+        if (l.isEmpty) List[Int]()
+        else if (l.head == x) i :: findIndicesRecAux(l.tail, x, i+1)
+        else findIndicesRecAux(l.tail, x, i+1)
+    }
+    findIndicesRecAux(l, x, 0)
+}
 
 /* Scrivere un metodo Scala isSorted che, data una lista di interi, 
 verifica se è ordinata in modo non decrescente. */
@@ -17,5 +32,8 @@ restituisce la lunghezza della stringa più lunga.
 Suggerimento: usare map e reduce
 */
 
+
 @main def run() =
     val l = List(2,5,6,7,3,6)
+
+        
